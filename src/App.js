@@ -1,15 +1,22 @@
 import React, {useState, useEffect} from "react";
 import "./App.css";
+import Header from "./components/Header";
+import Description from "./components/Description";
+import Photo from "./components/Photo";
 
 function App() {
+
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    
+  }, [])
+
   return (
     <div className="App">
-      <h1>NASA Photo Of The Day</h1>
-      <img></img>
-
-      <p>
-        Insert photo description here from data <span role="img" aria-label='go!'>🚀</span>!
-      </p>
+      <Header />
+      <Photo />
+      <Description />
       <button>I need some space!</button>
     </div>
   );
