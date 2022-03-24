@@ -1,10 +1,10 @@
 import React from "react";
 
-const Description = () => {
+const Description = (props) => {
 
     return (
         <p>
-        Insert photo description here from data
+         {props.data.explanation}
         </p>
     )
 }

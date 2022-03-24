@@ -1,12 +1,10 @@
 import React from "react";
 
 
-const Photo = () => {
+const Photo = (props) => {
 
     return(
-        <img>
-        
-        </img>
+        <img src={props.data.url}></img>
     )
 }
 
